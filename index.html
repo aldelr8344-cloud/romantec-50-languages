@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#240817">
+  <meta name="description" content="أحبك بكل لغات العالم — رحلة رومانسية عبر 50 لغة.">
+  <title>I Love You · 50 Languages</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div id="hearts" class="hearts" aria-hidden="true"></div>
+
+  <main class="page">
+    <header class="topbar">
+      <a class="round-icon" href="#" aria-label="العودة للبداية" id="homeButton">⌂</a>
+      <span class="tiny-heart" aria-hidden="true">♥</span>
+      <button class="round-icon" id="soundButton" type="button" aria-label="تشغيل الموسيقى" title="تشغيل أو إيقاف الموسيقى">♫</button>
+    </header>
+
+    <section class="intro">
+      <div class="eyebrow">A LITTLE LOVE, IN EVERY LANGUAGE</div>
+      <h1>I Love You<span>♡</span></h1>
+      <p>في 50 لغة.. ونفس الإحساس</p>
+      <div class="ornament"><i></i><span>✦</span><i></i></div>
+    </section>
+
+    <section class="scene" aria-live="polite">
+      <div class="moon-glow"></div>
+      <div class="orbit-heart" aria-hidden="true">♥</div>
+      <div class="phrase-card">
+        <div class="card-topline"><span>♡</span><span>WORDS FROM THE HEART</span><span>♡</span></div>
+        <button class="arrow arrow-prev" id="prevButton" type="button" aria-label="اللغة السابقة">‹</button>
+        <div class="phrase-content">
+          <div class="phrase" id="phrase" lang="ar">أحبك</div>
+          <div class="language" id="language">Arabic · العربية</div>
+        </div>
+        <button class="arrow arrow-next" id="nextButton" type="button" aria-label="اللغة التالية">›</button>
+        <div class="card-bottom-heart">♥</div>
+      </div>
+    </section>
+
+    <section class="progress-area">
+      <div class="counter"><span class="globe">◎</span><span id="counter">1 / 50</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+    </section>
+
+    <section class="message">
+      <h2><span>♥</span> كل لغة.. ونفس الشعور</h2>
+      <p>استمتع برحلة الحب حول العالم</p>
+    </section>
+
+    <section class="controls">
+      <button id="playButton" class="play-button" type="button">
+        <span id="playIcon">Ⅱ</span>
+        <span id="playText">إيقاف العرض التلقائي</span>
+        <span class="pulse-dot" id="pulseDot"></span>
+      </button>
+      <p class="hint">تتغير اللغة تلقائيًا كل 3 ثوانٍ</p>
+    </section>
+
+    <footer>MADE WITH <span>♥</span> FOR SOMEONE SPECIAL</footer>
+  </main>
+
+ <audio id="backgroundMusic" src="العيون-العسليه.mp3" loop preload="none"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
